@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:group_study_app/home_screen.dart';
 import 'groupdetails.dart';
 
 class GroupListing extends StatefulWidget {
@@ -148,10 +149,33 @@ class _GroupListingState extends State<GroupListing> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        Icon(Icons.home, color: Colors.grey[600]),
-                        Icon(Icons.settings, color: Colors.grey[600]),
-                        Icon(Icons.list, color: Colors.blue),
-                        Icon(Icons.person, color: Colors.grey[600]),
+                        IconButton(
+                          icon: const Icon(Icons.home, color: Colors.grey),
+                          onPressed: () {
+                            Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(builder: (context) => const HomeScreen()),
+                            );
+                          },
+                        ),
+                        IconButton(
+                          icon: const Icon(Icons.settings, color: Colors.grey),
+                          onPressed: () {
+                            // Handle settings
+                          },
+                        ),
+                        IconButton(
+                          icon: const Icon(Icons.list, color: Colors.blue),
+                          onPressed: () {
+                            // Already on groups page
+                          },
+                        ),
+                        IconButton(
+                          icon: const Icon(Icons.person, color: Colors.grey),
+                          onPressed: () {
+                            // Handle profile
+                          },
+                        ),
                       ],
                     ),
                   ),
