@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:group_study_app/home_screen.dart';
 import 'groupdetails.dart';
+import 'package:group_study_app/services/group_service.dart';
 
 class GroupListing extends StatefulWidget {
   const GroupListing({super.key});
@@ -14,56 +15,22 @@ class _GroupListingState extends State<GroupListing> {
   final TextEditingController searchController = TextEditingController();
   Group? selectedGroup;
 
-  final List<Group> groups = [
-    Group(
-      name: 'Physics',
-      memberCount: 250,
-      avatarColor: Colors.blue,
-      description: 'Physics study group for advanced topics',
-      admin: 'Dr. Smith',
-      discussionTopics: ['Quantum Mechanics', 'Thermodynamics', 'Electromagnetism'],
-    ),
-    Group(
-      name: 'Intro to Stats',
-      memberCount: 22,
-      avatarColor: Colors.green,
-      description: 'About the intro to stats; it\'s group of international students',
-      admin: 'Learn Otian',
-      discussionTopics: ['Maths Topics', 'Probability', 'Stats'],
-    ),
-    Group(
-      name: 'English',
-      memberCount: 250,
-      avatarColor: Colors.orange,
-      description: 'English literature and writing group',
-      admin: 'Prof. Johnson',
-      discussionTopics: ['Grammar', 'Literature', 'Writing'],
-    ),
-    Group(
-      name: 'IT Group',
-      memberCount: 22,
-      avatarColor: Colors.purple,
-      description: 'Information Technology study group',
-      admin: 'Tech Lead',
-      discussionTopics: ['Programming', 'Databases', 'Networks'],
-    ),
-    Group(
-      name: 'English',
-      memberCount: 250,
-      avatarColor: Colors.red,
-      description: 'Advanced English communication',
-      admin: 'Dr. Williams',
-      discussionTopics: ['Speaking', 'Listening', 'Pronunciation'],
-    ),
-    Group(
-      name: 'IT Group',
-      memberCount: 22,
-      avatarColor: Colors.teal,
-      description: 'Advanced IT concepts and projects',
-      admin: 'Senior Dev',
-      discussionTopics: ['AI/ML', 'Cloud Computing', 'DevOps'],
-    ),
-  ];
+  // Replace hardcoded groups with an initially-empty list that will be loaded.
+  List<Group> groups = [];
+
+  @override
+  void initState() {
+    super.initState();
+    // Load groups from assets
+    fetchGroupsFromAssets().then((loaded) {
+      setState(() {
+        groups = loaded;
+      });
+    }).catchError((err) {
+      // keep simple: log and fall back to empty list
+      debugPrint('Failed to load groups: $err');
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -261,13 +228,32 @@ class _GroupListingState extends State<GroupListing> {
             CircleAvatar(
               backgroundColor: group.avatarColor,
               radius: 20,
-              child: Text(
-                group.name[0].toUpperCase(),
-                style: const TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
+              child: group.avatarImage != null
+                  ? ClipOval(
+                      child: Image.asset(
+                        group.avatarImage!,
+                        width: 40,
+                        height: 40,
+                        fit: BoxFit.cover,
+                        errorBuilder: (context, error, stackTrace) {
+                          // Fallback to text if image fails to load
+                          return Text(
+                            group.name[0].toUpperCase(),
+                            style: const TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          );
+                        },
+                      ),
+                    )
+                  : Text(
+                      group.name[0].toUpperCase(),
+                      style: const TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
             ),
             const SizedBox(width: 12),
             Expanded(
@@ -314,6 +300,7 @@ class Group {
   final String name;
   final int memberCount;
   final Color avatarColor;
+  final String? avatarImage;
   final String description;
   final String admin;
   final List<String> discussionTopics;
@@ -322,8 +309,36 @@ class Group {
     required this.name,
     required this.memberCount,
     required this.avatarColor,
+    this.avatarImage,
     required this.description,
     required this.admin,
     required this.discussionTopics,
   });
+
+  factory Group.fromJson(Map<String, dynamic> json) {
+    final colorStr = (json['avatarColor'] as String?) ?? '#FF2196F3';
+    // Expect hex like "#RRGGBB" or "#AARRGGBB"
+    int value;
+    if (colorStr.startsWith('#')) {
+      final hex = colorStr.length == 7
+          ? 'ff${colorStr.substring(1)}' // add full opacity
+          : colorStr.substring(1);
+      value = int.parse(hex, radix: 16);
+    } else {
+      value = int.parse(colorStr, radix: 16);
+    }
+    return Group(
+      name: json['name'] as String? ?? 'Unknown',
+      memberCount: (json['memberCount'] as num?)?.toInt() ?? 0,
+      avatarColor: Color(value),
+      avatarImage: json['avatarImage'] as String?,
+      description: json['description'] as String? ?? '',
+      admin: json['admin'] as String? ?? '',
+      discussionTopics:
+          (json['discussionTopics'] as List<dynamic>?)
+                  ?.map((e) => e as String)
+                  .toList() ??
+              <String>[],
+    );
+  }
 }

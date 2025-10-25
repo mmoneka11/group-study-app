@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Physics",
+    "memberCount": 250,
+    "avatarColor": "#2196F3",
+    "avatarImage": "assets/groupicon.png",
+    "description": "Physics study group for advanced topics",
+    "admin": "Dr. Smith",
+    "discussionTopics": ["Quantum Mechanics", "Thermodynamics", "Electromagnetism"]
+  },
+  {
+    "name": "Intro to Stats",
+    "memberCount": 22,
+    "avatarColor": "#4CAF50",
+    "avatarImage": "assets/%F0%9F%8C%B1.png",
+    "description": "About the intro to stats; it's group of international students",
+    "admin": "Learn Otian",
+    "discussionTopics": ["Maths Topics", "Probability", "Stats"]
+  },
+  {
+    "name": "English",
+    "memberCount": 250,
+    "avatarColor": "#FF9800",
+    "avatarImage": "assets/groupicon.png",
+    "description": "English literature and writing group",
+    "admin": "Prof. Johnson",
+    "discussionTopics": ["Grammar", "Literature", "Writing"]
+  },
+  {
+    "name": "IT Group",
+    "memberCount": 22,
+    "avatarColor": "#9C27B0",
+    "avatarImage": "assets/groupicon.png",
+    "description": "Information Technology study group",
+    "admin": "Tech Lead",
+    "discussionTopics": ["Programming", "Databases", "Networks"]
+  },
+  {
+    "name": "Advanced English",
+    "memberCount": 180,
+    "avatarColor": "#F44336",
+    "avatarImage": "assets/%F0%9F%8C%B1.png",
+    "description": "Advanced English communication",
+    "admin": "Dr. Williams",
+    "discussionTopics": ["Speaking", "Listening", "Pronunciation"]
+  },
+  {
+    "name": "Advanced IT",
+    "memberCount": 35,
+    "avatarColor": "#009688",
+    "avatarImage": "assets/groupicon.png",
+    "description": "Advanced IT concepts and projects",
+    "admin": "Senior Dev",
+    "discussionTopics": ["AI/ML", "Cloud Computing", "DevOps"]
+  }
+]
