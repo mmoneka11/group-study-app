@@ -7,3 +7,4 @@ Future<List<Group>> fetchGroupsFromAssets() async {
   final List<dynamic> data = json.decode(jsonStr) as List<dynamic>;
   return data.map((e) => Group.fromJson(e as Map<String, dynamic>)).toList();
 }
+

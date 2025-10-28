@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:group_study_app/login_screen.dart';
 import 'package:group_study_app/splash_screen.dart';
-
+import 'package:group_study_app/services/auth_service.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  // Initialize auth service if needed (in-memory here)
+  AuthService.instance.init();
   runApp(const MainApp());
 }
 

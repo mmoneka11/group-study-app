@@ -46,7 +46,7 @@ The app focuses on:
 1. **Splash Screen** → Intro or logo animation  
 2. **Login / Signup** → User authentication  
 3. **Home Dashboard** → Joined or available groups  
-4. **Group Details** → Members, resources, chat  
+4. **Group Listing and Details** → Members, resources, chat  
 5. **Chat Screen** → Real-time discussions  
 6. **Reminders Screen** → Upcoming study sessions  
 
@@ -63,6 +63,8 @@ group_study_app/
 │ │ ├── splash_screen.dart # Splash screen UI
 │ │ ├── login_screen.dart # Login / Signup UI
 │ │ ├── home_screen.dart # Dashboard view
+│ │ ├── grouplisting.dart
+│ │ ├── groupdetails.dart
 │ │ ├── chat_screen.dart # Real-time chat
 │ │ └── reminder_screen.dart # Study reminders
 │ ├── widgets/ # Custom reusable widgets
@@ -84,9 +86,10 @@ group_study_app/
 | Tool | Purpose |
 |------|----------|
 | **Flutter (Dart)** | UI and app logic |
+| **Mock JSON API / assets/groups.json** | Simulated backend data |
 | **Firebase (Future)** | Authentication & Realtime DB |
-| **Figma / Whimsical** | UI/UX design |
-| **Git & GitHub** | Version control |
+| **Figma / Whimsical** | UI/UX design & prototype|
+| **Git & GitHub** | Version control and collaboration |
 
 ---
 
@@ -127,10 +130,12 @@ git push -u origin main
 
 | Role | Name | GitHub | Medium | Contribution |
 |------|------|--------|--------|---------------|
-| 👩‍💻 **Developer / Project Lead** | **Moneka Meghwar** | [GitHub](https://github.com/mmoneka11) | [Medium](https://medium.com/@mmoneka11) |Flutter Setup, and Documentation |
-| 👨‍💻 **Team Member 1** | *[Add Name]* | [GitHub](https://github.com/username1) | [Medium](https://medium.com/@username1) | Wireframes, Design Assistance |
-| 👩‍💻 **Team Member 2** | *[Add Name]* | [GitHub](https://github.com/username2) | [Medium](https://medium.com/@username2) | Research, Content Support |
-
+| 👩‍💻 **Team Lead / Developer** | ***Quinta Mellisa*** | [GitHub](https://github.com/mm) | [Medium](https://medium.com/@mm) | Program listing & details screens, full API integration |
+| 👩‍💻 **Project Manager / Developer** | ***Moneka Meghwar*** | [GitHub](https://github.com/mmoneka11) | [Medium](https://medium.com/@mmoneka11) |Flutter setup, UI logic integration, documentation, and overall coordination |
+| 👩‍💻 **Project Manager** | ***Malak Mohamed Kamal*** | [GitHub](https://github.com/username1) | [Medium](https://medium.com/@username1) | Login page and Home page design and documentation |
+| 👨‍💻 **Project Lead / UI Designer** | ***Adil Irfan*** | [GitHub](https://github.com/username1) | [Medium](https://medium.com/@username1) | Wireframes, Design Assistance |
+| 👩‍💻 **Project Lead** |  ***Aadil Meghwar***| [GitHub](https://github.com/username2) | [Medium](https://medium.com/@username2) | Splash screen, Signup screen development, and UI enhancements |
+git 
 ---
 
 ## 💬 Quote
