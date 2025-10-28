@@ -120,7 +120,7 @@ git init
 git add .
 git commit -m "Initial Flutter project setup"
 git branch -M main
-git remote add origin https://github.com/yourusername/group_study_app.git
+git remote add origin https://github.com/mmoneka11/group_study_app.git
 git push -u origin main
 ```
 
@@ -135,7 +135,8 @@ git push -u origin main
 | 👩‍💻 **Project Manager** | ***Malak Mohamed Kamal*** | [GitHub](https://github.com/username1) | [Medium](https://medium.com/@username1) | Login page and Home page design and documentation |
 | 👨‍💻 **Project Lead / UI Designer** | ***Adil Irfan*** | [GitHub](https://github.com/username1) | [Medium](https://medium.com/@username1) | Wireframes, Design Assistance |
 | 👩‍💻 **Project Lead** |  ***Aadil Meghwar***| [GitHub](https://github.com/username2) | [Medium](https://medium.com/@username2) | Splash screen, Signup screen development, and UI enhancements |
-git 
+| 👩‍💻 **Project Scribe** | ***Alexus Lee*** | [GitHub](https://github.com/username2) | [Medium](https://medium.com/@username2) | Research, Content Support |
+
 ---
 
 ## 💬 Quote
