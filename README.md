@@ -131,7 +131,7 @@ git push -u origin main
 | Role | Name | GitHub | Medium | Contribution |
 |------|------|--------|--------|---------------|
 | 👩‍💻 **Team Lead / Developer**  | ***Quinta Mellisa*** | [GitHub](https://github.com/mm) | [Medium](https://medium.com/@mm) | Program listing & details screens, full API integration |
-| 👩‍💻 **Project Manager / Developer**  | ***Moneka Meghwar*** | [GitHub](https://github.com/mmoneka11) | [Medium](https://medium.com/@mmoneka11) |Flutter setup, UI logic integration, documentation, and overall coordination |
+| 👩‍💻 **Project Manager / Developer**    | ***Moneka Meghwar*** | [GitHub](https://github.com/mmoneka11) | [Medium](https://medium.com/@mmoneka11) |Flutter setup, UI logic integration, documentation, and overall coordination |
 | 👩‍💻 **Project Manager**  | ***Malak Mohamed Kamal*** | [GitHub](https://github.com/username1) | [Medium](https://medium.com/@username1) | Login page and Home page design and documentation |
 | 👨‍💻 **Project Lead / UI Designer**  | ***Adil Irfan*** | [GitHub](https://github.com/username1) | [Medium](https://medium.com/@username1) | Wireframes, Design Assistance |
 | 👩‍💻 **Project Scribe / Developer**  |  ***Aadil Meghwar***| [GitHub](https://github.com/username2) | [Medium](https://medium.com/@username2) | Splash screen, Signup screen development, and UI enhancements |
