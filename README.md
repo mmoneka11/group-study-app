@@ -125,17 +125,32 @@ git push -u origin main
 ```
 
 ---
+## 🎥 Demo Video
+
+You can watch the demo video below:
+
+[![Watch the Demo](https://img.shields.io/badge/▶️%20Play%20Demo-Group%20Study%20App-blue?style=for-the-badge)](https://github.com/mmoneka11/group-study-app/raw/refs/heads/main/Demo%20Video/Demo-Video.mp4)
+
+<video src="https://github.com/mmoneka11/group-study-app/raw/refs/heads/main/Demo%20Video/Demo-Video.mp4" width="600" controls></video>
+
+---
 
 ## 🧠 Team Credits
 
-| Role | Name | GitHub | Medium | Contribution |
-|------|------|--------|--------|---------------|
+| Role   | Name   | GitHub | Medium | Contribution |
+|--------|--------|--------|--------|---------------|
 | 👩‍💻 **Team Lead / Developer**  | ***Quinta Mellisa*** | [GitHub](https://github.com/mm) | [Medium](https://medium.com/@mm) | Program listing & details screens, full API integration |
 | 👩‍💻 **Project Manager / Developer**    | ***Moneka Meghwar*** | [GitHub](https://github.com/mmoneka11) | [Medium](https://medium.com/@mmoneka11) |Flutter setup, UI logic integration, documentation, and overall coordination |
 | 👩‍💻 **Project Manager**  | ***Malak Mohamed Kamal*** | [GitHub](https://github.com/username1) | [Medium](https://medium.com/@username1) | Login page and Home page design and documentation |
 | 👨‍💻 **Project Lead / UI Designer**  | ***Adil Irfan*** | [GitHub](https://github.com/username1) | [Medium](https://medium.com/@username1) | Wireframes, Design Assistance |
 | 👩‍💻 **Project Scribe / Developer**  |  ***Aadil Meghwar***| [GitHub](https://github.com/username2) | [Medium](https://medium.com/@username2) | Splash screen, Signup screen development, and UI enhancements |
 | 👩‍💻 **Project Scribe**  | ***Alexus Lee*** | [GitHub](https://github.com/username2) | [Medium](https://medium.com/@username2) | Research, Content Support |
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
