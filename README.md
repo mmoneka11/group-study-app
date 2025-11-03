@@ -2,8 +2,10 @@
 
 ![Project Logo](https://img.shields.io/badge/Project-Group%20Study%20App-blue)  ![Language](https://img.shields.io/badge/Language-Dart-yellow) ![Framework](https://img.shields.io/badge/Framework-Flutter-green)
 
-A mobile app built using **Flutter** to make collaborative learning simple and effective.  
-The app allows students to **create and join study groups**, chat in real time, share study materials, and manage study sessions — all in one place.
+
+The Group Study App is an interactive learning platform designed to enable students to collaborate, share resources, and learn together efficiently. The app allows students to **create and join study groups**, chat in real time, share study materials, and manage study sessions — all in one place.
+
+The app’s goal is to foster a digital learning environment where users can communicate, clarify doubts, and collaborate seamlessly — all in one unified platform.
 
 ---
 
@@ -40,6 +42,17 @@ The app focuses on:
 |------------|--------------|
 | **Students** | Join or create study groups, chat, and share resources |
 | **Admins / Group Leaders** | Manage groups, post announcements, and moderate discussions |
+
+---
+
+## ⚙️ Methodology
+
+The project followed a modular and iterative development approach:
+1. **Planning & Design:** Defined app goals, features, and user flow; designed UI wireframes.
+2. **Frontend Development:** Built using Flutter for cross-platform support.
+3. **Backend Integration:** Implemented REST APIs for group listing and details.
+5. **Testing & Debugging:** Conducted functionality and user-experience testing.
+6. **Final Deployment:** Ensured responsiveness and tested on web and Android platforms.
 
 ---
 
