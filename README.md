@@ -1,5 +1,7 @@
 # 📚 Group Study App
 
+![Project Logo](https://img.shields.io/badge/Project-Group%20Study%20App-blue)  ![Language](https://img.shields.io/badge/Language-Dart-yellow) ![Framework](https://img.shields.io/badge/Framework-Flutter-green)
+
 A mobile app built using **Flutter** to make collaborative learning simple and effective.  
 The app allows students to **create and join study groups**, chat in real time, share study materials, and manage study sessions — all in one place.
 
