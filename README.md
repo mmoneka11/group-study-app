@@ -11,10 +11,9 @@ The app’s goal is to foster a digital learning environment where users can com
 
 ## 🖼️ App Preview (Wireframes / UI Screens)
 
-<!-- | Splash Screen | Login Screen | Home Screen | Chat Screen |
-|----------------|--------------|--------------|--------------|
-| ![Splash](assets/images/splash_screen.png) | ![Login](assets/images/login_screen.png) | ![Home](assets/images/home_screen.png) | ![Chat](assets/images/chat_screen.png) | -->
-
+| Splash Screen | Signup Screen | Login Screen | Home Screen | Group Listing & Details Screen |
+|----------------|--------------|--------------|--------------|--------------|
+| <img src="Demo%20Video/splash.png" alt="Splash Interface" width="200"> | <img src="Demo%20Video/signup.png" alt="Sign Up Interface" width="200"> | <img src="Demo%20Video/signin.png" alt="Login Interface" width="200"> | <img src="Demo%20Video/home.png" alt="Home Interface" width="200"> | <img src="Demo%20Video/grouplistdetails.png" alt="Group Listing & Details Interface" width="200"> |
 
 ---
 
